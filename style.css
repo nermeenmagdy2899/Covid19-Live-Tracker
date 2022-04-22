@@ -1,0 +1,206 @@
+body {
+  background-color: #1b1717;
+}
+#header_container {
+  background-color: black;
+  border-radius: 10px;
+}
+#pageTitle {
+  color: wheat;
+  margin: 0 150px 0 20px;
+}
+#header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  font-size: larger;
+  justify-content: center;
+  margin-bottom: 3px;
+  align-items: center;
+}
+#header .tabs {
+  flex-grow: 1;
+  text-align: center;
+}
+#iti_logo {
+  height: 100%;
+  width: 30px;
+  float: right;
+  margin-right: 10px;
+}
+#header a:hover {
+  background-color: lightgray;
+  cursor: pointer;
+  color: black;
+}
+#header a {
+  color: white;
+  text-decoration: none;
+}
+#leftPanel {
+  width: 15%;
+  height: 400px;
+  background-color: #0f0c0c;
+  float: left;
+  padding: 7px 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+#search {
+  float: right;
+  border-radius: 15px;
+  padding: 7px 0;
+  background-color: #0f0c0c;
+  border-color: rgb(142, 23, 23);
+  border-radius: 60px;
+  color: white;
+  padding: 7px;
+  margin-right: 30px;
+  font-weight: bold;
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+#map {
+  width: 85%;
+  height: 414px;
+  float: left;
+}
+#popup {
+  background-color: rgba(54, 47, 47, 0.805);
+  color: rgb(230, 221, 221);
+  border-width: 15px;
+  border-color: #050101;
+  font-weight: bold;
+  border: 2px solid rgba(20, 11, 11, 0.805);
+  border-radius: 10px;
+  border-style: groove;
+  padding: 5px 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#popup:before {
+  border-top-color: #ffcc33;
+  border-top: 11px solid rgba(0, 0, 0, 0.5);
+  border-right: 11px solid transparent;
+  border-left: -4px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: 243px;
+  margin-left: -4px;
+  left: 3px;
+}
+#name {
+  color: rgb(78, 86, 48);
+  background-color: rgba(230, 223, 223, 0.632);
+  border-radius: inherit;
+  padding: 7px 0;
+}
+#whichLayer {
+  position: absolute;
+  left: 16%;
+  z-index: 1;
+  width: 200px;
+  background-color: #0f0c0c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: rgba(224, 17, 17, 0.805);
+  border-radius: 10px;
+  height: 30px;
+  font-size: large;
+  text-align: center;
+}
+.countries {
+  background-color: #0f0c0c;
+  border: 2px inset rgba(68, 68, 68, 0.805);
+  margin: 5px, 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(218, 212, 212);
+  height: 70px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.imgcountries {
+  background-color: #050101;
+  margin: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(170, 157, 157);
+  height: 20px;
+  width: 20px;
+  float: right;
+}
+#countryLogo {
+  display: block;
+  float: right;
+  margin: auto;
+  transition: background-color 300ms;
+  height: 160px;
+}
+.countries:hover {
+  background-color: rgba(142, 23, 23, 0.805);
+}
+.countries:active {
+  background-color: red;
+}
+.ol-viewport {
+  border-radius: 15px;
+}
+.ol-control {
+  margin-top: 30px;
+}
+.foot-lab {
+  border: 2px solid rgb(44, 44, 44);
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+  height: 108px;
+  color: rgb(243, 237, 237);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: larger;
+  left: 20%;
+  position: relative;
+}
+.footer-container {
+  float: left;
+  width: 100%;
+  height: 108px;
+  background-color: #0f0c0c;
+  margin: 10px;
+}
+.countryDeath {
+  color: rgba(202, 54, 54, 0.805);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#rec,
+#death,
+#confirm {
+  font-size: x-large;
+}
+#rec {
+  color: green;
+}
+
+#death {
+  color: red;
+}
+#confirm {
+  color: #888;
+}
+
+/* Scroll Bars */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

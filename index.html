@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/v6.14.1-dist/ol.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./scripts/v6.14.1-dist/ol.css" />
+    <link rel="icon" href="./styles/images/iti.png">
+
+    <title>Covid19 Live Tracker</title>
+  </head>
+  <body>
+    <header id="header_container">
+      <div id="header">
+        <h1 id="pageTitle">Covid19 Live Tracker</h5>
+        <a href="" title="sss" class="tabs" id="home">Home</a>
+        <a href="./team.html" target="_blank" class="tabs" id="about">About</a>
+        <a href="./team.html" target="_blank" class="tabs" id="contact">Team Members</a>
+        <input type="text" id="search" placeholder="Search for countries.." />
+        <img id="iti_logo" src="./styles/images/iti.png" alt="iti_logo" />
+      </div>
+    </header>
+    <div id="leftPanel"></div>
+    <div id="map">
+      <select id="whichLayer">
+        <option value="dark">Dark</option>
+        <option value="osm">OSM</option>
+        <option value="watercolor">Watercolor</option>
+      </select>
+    </div>
+    <div id="popup">
+      <img id="countryLogo" alt="" />
+      <div for="" id="name"></div>
+      <div for="" id="recovered"></div>
+      <div for="" id="confirmed"></div>
+      <div for="" id="deaths"></div>
+    </div>
+
+    <div class="footer-container">
+      <!--recovered-->
+      <div id="recoveredd" class="foot-lab">
+        <p id="label1">Recovered</p>
+        <div class="counter" id="rec">0</div>
+      </div>
+      <!--confirmed-->
+      <div id="confirmedd" class="foot-lab">
+        <p id="label2">Confirmed</p>
+        <div class="counter" id="confirm">0</div>
+      </div>
+      <!--deaths-->
+      <div id="deathss" class="foot-lab">
+        <p id="label3">Deaths</p>
+        <div class="counter" id="death">0</div>
+      </div>
+    </div>
+  </body>
+</html>
